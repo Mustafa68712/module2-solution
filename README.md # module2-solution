@@ -14,32 +14,18 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 
-
-
-
-#bp {background-color:transparent;
-   
-    border: 0.2px solid black;
-    margin: 30px auto 10px;}
-   
-
-    .p1 {background-color:transparent;
-      font-size: 1.4em;
-      width: 250px;
-      height: auto;
-      text-align: center;
-      margin: 5px auto 10px;}
-  h1 {font-size: 2em;
-    margin: 10px 10px 10px 10px;
-    text-align: center;}
-
 /** HEADER **/
 #header-nav {
   background-color: #f6b319;
   border-radius: 0;
   border: 0;
-  width: auto;
-  height: 100px;
+}
+
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
 }
 
 .navbar-brand {
@@ -151,10 +137,25 @@ body {
   
 
   /* Home Page */
-  .container {
+  .container .jumbotron {
     margin-top: 30px;
     padding: 0;
   }
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+}
 
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
@@ -167,6 +168,10 @@ body {
   /* End Header */
   
   /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
 
   .col-xxs-12 {
     position: relative;
@@ -176,16 +181,36 @@ body {
     float: left;
     width: 100%;
   }
+}
+
+
+
+
+
+
 .navbar-header button.navbar-toggle {
 clear: both;}
 
 
-@media (max-width: 2000px) and (min-width: 768px) {
-  #yt {visibility: hidden;}
 
-
-
-
+.bp {background-color: gray;
+    width: 1000px;
+    height: 320px;
+    border: 0.2px solid black;
+    margin: 30px auto 10px;
+    position: fixed;
+    overflow: hidden;
+    box-sizing: border-box; 
+    position: relative;}
+    .p1 {background-color:transparent;
+      font-size: 1.4em;
+      width: 250px;
+      height: auto;
+      text-align: center;
+      margin: 5px auto 10px;}
+  h1 {font-size: 2em;
+    margin: 10px 10px 10px 10px;
+    text-align: center;}
 </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -213,15 +238,15 @@ clear: both;}
         </div>
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="yt">
+            <li>
               <a href="menu-categories.html">
                 <br class="hidden-xs">Chicken</a>
             </li>
-            <li id="yt">
+            <li>
               <a href="#">
                  <br class="hidden-xs">Beef</a>
             </li>
-            <li id="yt">
+            <li>
               <a href="#">
                  <br class="hidden-xs">Sushi</a>
             </li>
@@ -232,32 +257,9 @@ clear: both;}
   </header>
   <h1>Our Menu</h1>
 <div class="col-md-12,col-sm-12,col-xs-12">
-  <div id="bp" class="col-sm-4,col-xs-6,col-lg-3">
+  <div class="bp">
   <p class="p1">Chicken</p><br>
-  lorem ipsumm dolor sit amet, consectetur adipiscing elit,
-  sed do eiusmod tempor inciddiunt ut labore et dolore magna
-  aliqua. Ut emin ad minim veniam, quiis nostrud exercitation
-  ullamco laboris nii ut aliquip ex ea commodo consequatlorem
-  ipsumm dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor inciddiunt ut labore et dolore magna aliqua.
-        Ut emin ad minim veniam, quiis nostrud exercitation ullamco
-         laboris nii ut aliquip ex ea commodo consequatlorem ipsumm
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-           tempor inciddiunt ut labore et dolore magna aliqua. Ut emin
-            ad minim veniam, quiis nostrud exercitation ullamco laboris
-             nii ut aliquip ex ea commodo consequatlorem ipsumm dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            inciddiunt ut labore et dolore magna aliqua. Ut emin ad minim 
-          veniam, quiis nostrud exercitation ullamco laboris nii ut aliquip
-           ex ea commodo consequatlorem ipsumm dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor inciddiunt ut labore et
-             dolore magna aliqua. Ut emin ad minim veniam, quiis nostrud
-              exercitation ullamco laboris nii ut aliquip ex ea commodo 
-            consequatlorem ipsumm dolor sit amet, consectetur adipiscing
-             elit, sed do eiusmod tempor inciddiunt ut labore et dolore
-              magna aliqua. Ut emin ad minim veniam, quiis nostrud 
-            exercitation ullamco laboris nii ut aliquip ex ea commodo 
-          consequat</div>
+  lorem ipsumm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddiunt ut labore et dolore magna aliqua. Ut emin ad minim veniam, quiis nostrud exercitation ullamco laboris nii ut aliquip ex ea commodo consequatlorem ipsumm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddiunt ut labore et dolore magna aliqua. Ut emin ad minim veniam, quiis nostrud exercitation ullamco laboris nii ut aliquip ex ea commodo consequatlorem ipsumm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddiunt ut labore et dolore magna aliqua. Ut emin ad minim veniam, quiis nostrud exercitation ullamco laboris nii ut aliquip ex ea commodo consequatlorem ipsumm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddiunt ut labore et dolore magna aliqua. Ut emin ad minim veniam, quiis nostrud exercitation ullamco laboris nii ut aliquip ex ea commodo consequatlorem ipsumm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddiunt ut labore et dolore magna aliqua. Ut emin ad minim veniam, quiis nostrud exercitation ullamco laboris nii ut aliquip ex ea commodo consequatlorem ipsumm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddiunt ut labore et dolore magna aliqua. Ut emin ad minim veniam, quiis nostrud exercitation ullamco laboris nii ut aliquip ex ea commodo consequat</div>
 
 </div>
 
